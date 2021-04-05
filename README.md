@@ -6,7 +6,7 @@ The goal of this project is to understand how each model of the recommendation e
 
 ## Content-Based Filtering
 
-<img src="https://github.com/yjeong5126/movie_recommender/blob/master/images/tfidf1.PNG" title="Feature1" width="850" height="400">
+<img src="https://github.com/yjeong5126/movie_recommender/blob/master/images/tfidf1.PNG" title="Feature1" width="600" height="250">
 
 **Content-based recommender** is the system to rely on the similarity of items when it recommends items to users. For example, when a user likes a movie, the system finds and recommends movies which have more similar features to the movie the user likes.
 In the feature above, *Movie 1* and *Movie 2* are considered similar each other and they are not similar to *Movie 3*. If a user likes *Movie 1*, then the system should recommend *Movie 2* to the user.
