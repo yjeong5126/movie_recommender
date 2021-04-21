@@ -71,7 +71,7 @@ The way to find the similar movies is to use the **cosine similarity** as follow
 
 <img src="https://github.com/yjeong5126/movie_recommender/blob/master/images/cosine_similarity.PNG" title="Feature1" width="500" height="250">
 
-In using the cosine similarity, replace the missing value for 0. **Movie_3** and **Movie_0** are the nearest movies to **Movie_1**. Therefore, the weighted average of the ratings for **Movie_3** and **Movie_0** by **User_1** will be the predicted rating for **Movie_1** by **User_1**.  
+In using the cosine similarity, replace the missing value for 0. **Movie_3** and **Movie_0** are the nearest movies to **Movie_1**. Then, the weighted average of the ratings for **Movie_3** and **Movie_0** by **User_1** will be the predicted rating for **Movie_1** by **User_1**. The cosine similarity is used for the weight for each similar movie.  
 
 <img src="https://github.com/yjeong5126/movie_recommender/blob/master/images/rating_sample2.PNG" title="Feature1" width="600" height="200">
 
