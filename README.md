@@ -56,3 +56,9 @@ For this practice, I use a movie dataset from the **MovieLens**. The version use
 All the lines of the code to build the content-based movie recommender are [here](https://github.com/yjeong5126/movie_recommender/blob/master/content_based/content_based_recommender.ipynb).
 The additional explanation about the logic and the code can be found in this [page](https://yjeong5126.medium.com/creating-content-based-movie-recommender-with-python-7f7d1b739c63) as well.
 
+## Item-based Collaborative Filtering
+
+**Item-based collaborative filtering** is the recommendation system to use the similarity between items using the ratings by users.
+
+- Step 1: Find the most similar (the nearest) movies to the movie for which you want to predict the rating.
+- Step 2: Calculate the weighted average of the ratings for the most similar movies by the user.
