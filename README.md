@@ -58,7 +58,28 @@ The additional explanation about the logic and the code can be found in this [pa
 
 ## Item-based Collaborative Filtering
 
-**Item-based collaborative filtering** is the recommendation system to use the similarity between items using the ratings by users.
+**Item-based collaborative filtering** is the recommendation system to use the similarity between items using the ratings by users. The fundamental assumption for this method is that a user gives similar ratings to similar movies.
+
+<img src="https://github.com/yjeong5126/movie_recommender/blob/master/images/rating_sample.PNG" title="Feature1" width="600" height="180">
+
+If we predict the rating for **Movie_1** by **User_1** in the example above:
 
 - Step 1: Find the most similar (the nearest) movies to the movie for which you want to predict the rating.
 - Step 2: Calculate the weighted average of the ratings for the most similar movies by the user.
+
+The way to find the similar movies is to use the **cosine similarity** as follows:
+
+<img src="https://github.com/yjeong5126/movie_recommender/blob/master/images/cosine_similarity.PNG" title="Feature1" width="500" height="250">
+
+In using the cosine similarity, replace the missing value for 0. **Movie_3** and **Movie_0** are the nearest movies to **Movie_1**. Therefore, the weighted average of the ratings for **Movie_3** and **Movie_0** by **User_1** will be the predicted rating for **Movie_1** by **User_1**.  
+
+<img src="https://github.com/yjeong5126/movie_recommender/blob/master/images/rating_sample2.PNG" title="Feature1" width="600" height="200">
+
+### Data 
+For this practice, I create a small size of a rating dataset. Then, I apply the code I create to the **MovieLens** dataset. ([movies.csv](https://github.com/yjeong5126/movie_recommender/blob/master/item_based_collaborative_filtering/movies.csv), [ratings.csv](https://github.com/yjeong5126/movie_recommender/blob/master/item_based_collaborative_filtering/ratings.csv))
+
+### Build the Item-based Collaborative Filtering
+All the lines of the code to build the item-based collaborative filtering are [here](https://github.com/yjeong5126/movie_recommender/blob/master/item_based_collaborative_filtering/item_based_collaborative_filtering.ipynb).
+The additional explanation about the logic and the code can be found in this [page](https://yjeong5126.medium.com/item-based-collaborative-filtering-in-python-91f747200fab) as well.
+
+
